@@ -4,7 +4,7 @@ import Input from '../../components/Input';
 import { useHistory, useParams } from 'react-router-dom';
 
 const Edit = () => {
-  const [name, setName] = useState();
+  const [name, setName] = useState('');
   const [price, setPrice] = useState();
   const [stock, setStock] = useState();
   const [status, setStatus] = useState();
