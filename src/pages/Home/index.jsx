@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const getProducts = async () => {
-      const response = await axios.get(`http://localhost:9000/products/?name=${search}`);
+      const response = await axios.get(`https://good-teal-haddock-veil.cyclic.app/products/?name=${search}`);
       setProduct(response.data);
     };
     getProducts();
@@ -18,8 +18,8 @@ const Home = () => {
 
   const deleteProduct = async (id) => {
     try {
-      await axios.delete(`http://localhost:9000/products/${id}`);
-      const response = await axios.get(`http://localhost:9000/products`);
+      await axios.delete(`https://good-teal-haddock-veil.cyclic.app/products/${id}`);
+      const response = await axios.get(`https://good-teal-haddock-veil.cyclic.app/products`);
       setProduct(response.data)
     } catch (error) {
       console.log(error);

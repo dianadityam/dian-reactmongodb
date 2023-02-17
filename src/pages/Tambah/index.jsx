@@ -14,7 +14,7 @@ const Tambah = () => {
   const saveProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:9000/products', {
+      await axios.post('https://good-teal-haddock-veil.cyclic.app/products', {
         name,
         price,
         stock,

@@ -13,7 +13,7 @@ const Detail = () => {
   }, []);
 
   const getProductById = async () => {
-    const response = await axios.get(`http://localhost:9000/products/${id}`);
+    const response = await axios.get(`https://good-teal-haddock-veil.cyclic.app/products/${id}`);
     setProduct(response.data);
   }
   

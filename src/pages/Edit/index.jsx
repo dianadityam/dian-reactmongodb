@@ -17,7 +17,7 @@ const Edit = () => {
   },[]);
 
   const getProductById = async() => {
-    const response = await axios.get(`http://localhost:9000/products/${id}`);
+    const response = await axios.get(`https://good-teal-haddock-veil.cyclic.app/products/${id}`);
     setName(response.data.name);
     setPrice(response.data.price);
     setStock(response.data.stock);
@@ -27,7 +27,7 @@ const Edit = () => {
   const updateProduct = async(e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:9000/products/${id}`, {
+      await axios.patch(`https://good-teal-haddock-veil.cyclic.app/products/${id}`, {
         name,
         price,
         stock,
